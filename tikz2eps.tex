@@ -1,0 +1,25 @@
+\documentclass{article}
+
+\usepackage{tikz}
+%% put tikzlibraryies below if needed
+
+
+
+\usepackage{verbatim}
+% set up externalization
+\usetikzlibrary{external}
+\tikzset{external/system call={latex \tikzexternalcheckshellescape -halt-on-error
+-interaction=batchmode -jobname "\image" "\texsource";
+dvips -o "\image".ps "\image".dvi;
+ps2eps "\image.ps"}}
+\tikzexternalize
+
+
+
+\begin{document}
+
+
+\input{venn}
+
+
+\end{document}

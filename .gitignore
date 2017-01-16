@@ -1,0 +1,8 @@
+*.log
+*.gz
+*.dpth
+*.md5
+*.auxlock
+*,sublime-project
+*,sublime-workspace
+.DS_Store
